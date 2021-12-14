@@ -23,10 +23,6 @@
 
                     	%>
                         <h1 class="display-4" style="font-size: 2.6rem;">¡Bienvenido <i><%=Nombre %></i>, al Sistema</h1>
-                        <p class="lead">Este Sistema Tiene como fin la gestión de una empresa de Cine.</p>
-                        <hr class="my-4">
-                        <p>Este Sistema esta de Desarrollo,por ende, esta en constante Actualización.</p>
-                        <p>Este Sistema Tiene las Funciones:</p>
                         <br>
                         <ul class="list-group col-lg-4">
                             <li class="list-group-item list-group-item-action active">Equipo</li>
