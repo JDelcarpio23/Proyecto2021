@@ -1,3 +1,4 @@
+<%@page import="util.Constante"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,9 +9,8 @@
 <%@include file="snippet/header.jsp"%>
 </head>
 <body>
-<%@include file="snippet/nav_main.jsp"%>
-	
-	<div class="container">
+<div class="container">
+	<%@include file="snippet/nav_main.jsp"%>
         <div class="row align-items-center vh-100 espacio">
             <div class="col-lg-11 mx-auto ">
                 <div class="p-5 rounded shadow fondo-claro">
@@ -18,33 +18,32 @@
                     
                     	<% 
                     	
-                    		String Nombre = (String) session.getAttribute("Nombre"); 
-                    		String Email = (String) session.getAttribute("Email");
-                    		String Direccion = (String) session.getAttribute("Direccion");
-                    		String Telefono = (String) session.getAttribute("Telefono");
+                    		String Nombre = (String) session.getAttribute(Constante.NOMBRE); 
+                    		String Email = (String) session.getAttribute(Constante.EMAIL);
+
                     	%>
-                        <h1 class="display-4" style="font-size: 2.6rem;">¡Bienvenido <i><%=Nombre %></i>, al Sistema CinePlus!</h1>
+                        <h1 class="display-4" style="font-size: 2.6rem;">¡Bienvenido <i><%=Nombre %></i>, al Sistema</h1>
                         <p class="lead">Este Sistema Tiene como fin la gestión de una empresa de Cine.</p>
                         <hr class="my-4">
                         <p>Este Sistema esta de Desarrollo,por ende, esta en constante Actualización.</p>
                         <p>Este Sistema Tiene las Funciones:</p>
                         <br>
                         <ul class="list-group col-lg-4">
-                            <li class="list-group-item list-group-item-action active">Mantenimiento Clientes</li>
-                            <li class="list-group-item ">Mantenimiento Usuarios</li>
-                            <li class="list-group-item list-group-item-action active">Mantenimiento Comestibles</li>
-                            <li class="list-group-item ">Mantenimiento Peliculas</li>
-                            <li class="list-group-item list-group-item-action active">Mantenimiento Proveedores</li>
-                            <li class="list-group-item ">Reporte ventas</li>
-                            <li class="list-group-item list-group-item-action active">Reporte Clientes</li>
-                            <li class="list-group-item ">Boleta</li>
+                            <li class="list-group-item list-group-item-action active">Equipo</li>
+                            <li class="list-group-item ">NOMBRE</li>
+                            <li class="list-group-item list-group-item-action active">Departamento</li>
+                            <li class="list-group-item ">DEPARTAMENTO</li>
+                            <li class="list-group-item list-group-item-action active">Provincia</li>
+                            <li class="list-group-item ">PROVINCIA</li>
+                            <li class="list-group-item list-group-item-action active">Distrito</li>
+                            <li class="list-group-item ">DISTRITO</li>
                             
                           </ul>
                       </div>
                 </div>
             </div>
         </div>
-    </div>
+</div>
 	
 
 <%@include file="snippet/Footer-Pie.jsp" %>
