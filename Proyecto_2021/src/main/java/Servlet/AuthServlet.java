@@ -55,12 +55,12 @@ public class AuthServlet extends HttpServlet {
         		
         	} else {
         		request.setAttribute("msj", "Verifique sus credenciales");
-        		request.getRequestDispatcher("Index.jsp").forward(request, response);
+        		request.getRequestDispatcher("Login.jsp").forward(request, response);
         	}
         	
     	} else if(type.equals("logout")){
     		request.getSession().invalidate();
-    		response.sendRedirect("Index.jsp");
+    		response.sendRedirect("Login.jsp");
     	}
     	    	
     	
