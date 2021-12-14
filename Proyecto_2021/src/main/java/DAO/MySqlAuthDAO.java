@@ -33,7 +33,7 @@ public class MySqlAuthDAO implements AuthDAO{
 			
 			if (rs.next()) {
 
-				login = new Login(rs.getString("idUsuario"), rs.getString("Nombres"), rs.getString("Apellidos"), rs.getString("Correo"), rs.getString("fecRegUsuario"), rs.getString("idCargo"), rs.getString("idDisciplina"));				
+				login = new Login(rs.getString("idUsuario"), rs.getString("Nombre"), rs.getString("Apellido"), rs.getString("dni") ,rs.getString("Correo"), rs.getString("fecRegistroUsua"), rs.getString("idCargo"), rs.getString("idDisciplina"));				
 			}
 			
 			

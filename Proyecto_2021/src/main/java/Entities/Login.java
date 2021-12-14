@@ -5,20 +5,30 @@ public class Login{
 	private String idUsuario;
 	private String nombre;
 	private String apellido;
+	private String dni;
 	private String fecReg;
 	private String email;
 	private String cargo;
 	private String disciplina;
 
-	public Login(String id, String nombre, String apellido, String fecReg, String email, String cargo, String disciplina) {
+	public Login(String id, String nombre, String apellido, String dni, String fecReg, String email, String cargo, String disciplina) {
 		super();
 		this.idUsuario = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.dni = dni;
 		this.fecReg = fecReg;
 		this.email = email;
 		this.cargo = cargo;
 		this.disciplina = disciplina;
+	}
+
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 
 	public String getIdUsuario() {
