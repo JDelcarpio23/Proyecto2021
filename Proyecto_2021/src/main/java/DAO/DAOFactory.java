@@ -1,6 +1,7 @@
 package DAO;
 
 import Interfaces.AuthDAO;
+import Interfaces.JugadorDAO;
 import Interfaces.UsuarioDAO;
 
 public abstract class DAOFactory {
@@ -11,6 +12,7 @@ public abstract class DAOFactory {
 	 
 	public abstract UsuarioDAO getUsuarioDAO();
 	public abstract AuthDAO getAuth();
+	public abstract JugadorDAO getJugadorDAO();
 	
 	public static DAOFactory getDAOFactory(int tipo) {
 		
