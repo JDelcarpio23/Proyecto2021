@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.DAOFactory;
 import Entities.Jugador;
 import Interfaces.JugadorDAO;
+import util.Constante;
 
 
 /**
@@ -67,8 +68,8 @@ public class JugadorServlet extends HttpServlet {
     protected void register(HttpServletRequest request, HttpServletResponse response) 
     		throws ServletException, IOException{
     	
-    	String equi = util.Constante.ID;
-    	String usu = request.getParameter("txtEquipo");
+    	String equi = Constante.NOMBRE;
+    	String usu = Constante.ID;
     	String nom = request.getParameter("txtNombres");
     	String ape = request.getParameter("txtApellidos");
     	String dni = request.getParameter("txtDni");
@@ -131,8 +132,8 @@ public class JugadorServlet extends HttpServlet {
     	
     	String idJugador = request.getParameter("idJugador");
     	
-    	String equi = util.Constante.ID;
-    	String usu = request.getParameter("txtEquipo");
+    	String equi = Constante.NOMBRE;
+    	String usu = Constante.ID;
     	String nom = request.getParameter("txtNombres");
     	String ape = request.getParameter("txtApellidos");
     	String dni = request.getParameter("txtDni");
