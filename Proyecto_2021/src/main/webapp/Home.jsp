@@ -39,10 +39,11 @@
                 </div>
             </div>
         </div>
+<%@include file="snippet/Footer-Pie.jsp" %>
 </div>
 	
 
-<%@include file="snippet/Footer-Pie.jsp" %>
+
 </body>
 <%@include file="snippet/footer.jsp" %>
 </html>

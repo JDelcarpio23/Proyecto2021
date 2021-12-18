@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url(../images/FondoLogin.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+H1,H2{
+	color: White;
+}
+
+label{
+	color: Red;
+	font-size: 20px;
+}
+
+.cuerpo{
+	width: 300px;
+	height: auto;
+	box-sizing: border-box;
+	margin-right: 10px;
+}

@@ -20,7 +20,9 @@
 	
 	<br>
 	<br>
-	<div class="col-lg-4">
+	<center>
+	<div class="cuerpo">
+		<div >
 	
 		<form action="AuthServlet" method="post" id="index_form">
 			
@@ -51,12 +53,11 @@
 			
 	    <%	
 		}
-		%>
-		
-		
-		
+		%>		
+		</div>
+	
 	</div>
-
+	</center>
 </div>
 
 </body>

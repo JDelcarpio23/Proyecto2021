@@ -7,8 +7,10 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="EquipoServlet?type=list">Equipo</a></li>
-        <li><a href="">Jugadores</a></li>
+
+        <li><a href="EquipoServlet?type=list">Equipo</a></li>     
+        <li><a href="Jugador.jsp">Jugadores</a></li>
+
         <li><a href="">Entrenamientos</a></li>
         <li><a href="">Partidos</a></li>
         <li><a href="">Consultas</a></li>
