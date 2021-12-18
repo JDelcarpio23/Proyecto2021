@@ -2,13 +2,13 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ Taglib uri="libCombo" prefix="etiqueta" %>
+<%@taglib uri="libCombo" prefix="etiqueta" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Jugador</title>
-<%@ include file="snippet/nav_main.jsp" %>
+
 <%@ include file="snippet/header.jsp" %>
 
 </head>
@@ -16,7 +16,7 @@
 
 <div class="container">
 	
-	
+	<%@ include file="snippet/nav_main.jsp" %>
 	
 	<%
 	
@@ -102,8 +102,6 @@
 			<thead>
 				<tr>
 					<th>id</th>
-					<th>Equipo</th>
-					<th>Entrenador</th>
 					<th>Nombres</th>
 					<th>Apellidos</th>
 					<th>DNI</th>
@@ -130,8 +128,6 @@
 					
 			%>
 				<tr class="grilla_campo">
-					<td><%=item.getIdJugador() %></td>
-					<td><%=item.getIdEquipo() %></td>
 					<td><%=item.getIdUsuario() %></td>
 					<td><%=item.getNombres() %></td>
 					<td><%=item.getApellidos() %></td>
