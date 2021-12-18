@@ -2,6 +2,7 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib uri="libCombo" prefix="etiqueta" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,20 +32,17 @@
 			
 			<div class="form-group">
 				<label>Departamento</label>
-				<input class="form-control" type="text" name="txtIdDepartamento"
-				value="<%=(equipoForm!=null)? equipoForm.getIdDepartamento():"" %>">
+				<etiqueta:TagComboDepartamento name="txtDepartamento"/>
 			</div>
 			
 			<div class="form-group">
 				<label>Provincia</label>
-				<input class="form-control" type="text" name=txtIdProvincia
-				value="<%=(equipoForm!=null)? equipoForm.getIdProvincia():"" %>">
+				<etiqueta:TagComboProvincia name="txtProvincia"/>
 			</div>
 			
 			<div class="form-group">
 				<label>Distrito</label>
-				<input class="form-control" type="text" name="txtIdDistrito"
-				value="<%=(equipoForm!=null)? equipoForm.getIdDistrito():"" %>">
+				<etiqueta:TagComboDistrito name="txtDistrito"/>
 			</div>
 			
 			<div class="form-group">

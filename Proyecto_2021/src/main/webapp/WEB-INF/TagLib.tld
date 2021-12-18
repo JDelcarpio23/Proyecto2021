@@ -37,5 +37,41 @@
 </attribute>
 </tag>
 
+<!-- COMBO DEPARTAMENTO -->
+<tag>
+<name>TagComboDepartamento</name>
+<tagclass>Tag.ComboDepartamento</tagclass>
+<bodycontent>false</bodycontent>
+<!-- ATRIBUTO -->
+<attribute>
+<name>name</name>
+<required>true</required>
+</attribute>
+</tag>
+
+<!-- COMBO PROVINCIA -->
+<tag>
+<name>TagComboProvincia</name>
+<tagclass>Tag.ComboProvincia</tagclass>
+<bodycontent>false</bodycontent>
+<!-- ATRIBUTO -->
+<attribute>
+<name>name</name>
+<required>true</required>
+</attribute>
+</tag>
+
+<!-- COMBO DISTRITO -->
+<tag>
+<name>TagComboDistrito</name>
+<tagclass>Tag.ComboDistrito</tagclass>
+<bodycontent>false</bodycontent>
+<!-- ATRIBUTO -->
+<attribute>
+<name>name</name>
+<required>true</required>
+</attribute>
+</tag>
+
 </taglib>
 
