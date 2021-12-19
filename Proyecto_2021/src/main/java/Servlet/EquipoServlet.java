@@ -164,6 +164,15 @@ public class EquipoServlet extends HttpServlet {
     		request.getRequestDispatcher("Equipo.jsp").forward(request, response);
     	}
     }
+    
+    protected void Provincia(HttpServletRequest request, HttpServletResponse response) 
+    		throws ServletException, IOException{
+    	
+    	String departamento = request.getParameter("txtIdDepartamento");    	
+    	
+    	
+    	
+    }
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
