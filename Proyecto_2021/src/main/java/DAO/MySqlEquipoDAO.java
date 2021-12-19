@@ -250,7 +250,7 @@ public class MySqlEquipoDAO implements EquipoDAO{
 	public List<Provincia> listProvincia(int idDepartamento) {
 		
 		List<Provincia> listProvincia = new ArrayList<Provincia>();
-		idDepartamento = 15;
+		idDepartamento = 0;//15;
 		
 		Connection cn = null;
 		PreparedStatement pstm = null;
@@ -297,7 +297,7 @@ public class MySqlEquipoDAO implements EquipoDAO{
 	public List<Distrito> listDistrito(int idProvincia) {
 		
 		List<Distrito> listDistrito = new ArrayList<Distrito>();
-		idProvincia = 127;
+		idProvincia = 0;//127;
 		
 		Connection cn = null;
 		PreparedStatement pstm = null;

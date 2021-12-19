@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.DAOFactory;
 import Entities.Equipo;
 import Interfaces.EquipoDAO;
+import util.Constante;
+import util.Fecha;
 
 /**
  * Servlet implementation class EquipoServlet
@@ -70,8 +72,8 @@ public class EquipoServlet extends HttpServlet {
     	String departamento = request.getParameter("txtIdDepartamento");
     	String provincia = request.getParameter("txtIdProvincia");
     	String distrito = request.getParameter("txtIdDistrito");
-    	String usuario = request.getParameter("txtIdUsuario");
-    	String fechaReg = request.getParameter("txtFechaReg");
+    	String usuario = Constante.ID;
+    	String fechaReg = Fecha.fechaActual();
     	
     	Equipo equipo = new Equipo();
     	equipo.setNombreEquipo(nombre);
